@@ -1,6 +1,6 @@
 FROM tomcat:10.0
 
-RUN **/*.* /usr/local/tomcat/webapps/ 
+RUN **/*.war /usr/local/tomcat/webapps/ 
 
 EXPOSE 8080
 
