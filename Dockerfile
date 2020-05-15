@@ -4,6 +4,8 @@ RUN **/*.* /usr/local/tomcat/webapps
 
 WORKDIR /usr/local/tomcat
 
-EXPOSE 8080
+ADD test.war /usr/local/tomcat/webapps/test.war
+
+EXPOSE 8092
 
 CMD ["catalina.sh", "run"]
