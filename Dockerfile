@@ -4,7 +4,7 @@ RUN **/*.war /usr/local/tomcat/webapps
 
 WORKDIR /usr/local/tomcat
 
-ADD test.war /usr/local/tomcat/webapps/test.war
+ADD *.war /usr/local/tomcat/webapps/*.war
 
 EXPOSE 8092
 
